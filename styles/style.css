@@ -1,5 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap');
+
+
+
 body {
     margin: 0;
     padding: 0;
-    font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+   /* background-color: rgb(255, 170, 213);*/
+   background-image: linear-gradient(to top, #fdcbf1 10%, #e6dee9 100%);  
+   /*background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%); */
+    box-sizing: border-box;
+    
 }
+
+/* Navbar  */
+
+
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #30b500;
+    color: rgb(217, 255, 0);
+    padding: 16px;
+    font-size: 60px;
+    border: none;
+    border-radius: 2px 2px 5px;
+   
+  }
+  /* The container <div> - needed to position the dropdown content */
+.dropdown {
+    margin-left: 170vw;
+    margin-right: 5vw;
+    margin-top: 2vw;
+    position:relative;
+    display:inline-block;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-end;
+	align-content: stretch;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display:none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width:182px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 2px 2px 5px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: rgb(146, 144, 144);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #bcbcbc;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+.intro {
+    position: relative;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+   
+  h1{
+    color:rgb(189, 146, 237);
+    font-size: 90px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: oblique;
+}
+.intro p{
+    color:rgb(255, 255, 255);
+    font-style: oblique;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+.works{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+	  flex-wrap: nowrap;
+    color:rgb(171, 126, 227);
+    font-family: sans-serif;
+    font-size:30px ;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: oblique;
+}
+
+h3{
+    color:black;
+}
+.img{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch; 
+    padding-top: 5vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 5vw;
+    background-color: black;
+    
+}
+.img2{
+    margin-top: 300px;
+    background-image: linear-gradient(to top, #fad9c4 50%,  #ffd1ff41 100%);
+    /*background-image: linear-gradient(-20deg, #ddd6f3 0%, #faaca8 100%, #faaca8 100%);*/
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: stretch; 
+    padding: 10vw;
+    padding-left: 10vw;
+    padding-top: 5vw;
+  }
+  .img2 img{
+    width: 50vw;
+    padding-right: 50px;
+    border: 8px 8px 10px;
+  }
+  .button{
+    margin: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    border: 40;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 600vw;
+    color: #090535;
+    letter-spacing: 1px;
+    font-size: 20px;
+    margin-top: 50px;
+    box-shadow: white 5px 5px 5px;
+    
+    
+
+ 
+  }
+  .buttons {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    border: 40px;
+    border-radius: 5px;
+    font-weight: 600vw;
+    color: #000000;
+    letter-spacing: 1px;
+    font-size: 30px;
+    margin-top: 50px;
+    flex-direction: row;
+	  justify-content: space-between;
+
+
+}
+
+.about{
+  background-image: linear-gradient(to top, #fdcbf1 10%, #e6dee9 100%); 
+  padding:500px; 
+  box-shadow: #7aff0d;
+}  
+h6{
+  font-size: 30px;
+}
+
+  
+  
+   
