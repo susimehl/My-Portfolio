@@ -3,7 +3,7 @@
 
 
 body {
-    margin: 0;
+    margin-top: 0px;
     padding: 0;
     font-family: 'Roboto', sans-serif;
    /* background-color: rgb(255, 170, 213);*/
@@ -18,58 +18,6 @@ body {
 
 
 
-/* Dropdown Button */
-.dropbtn {
-    background-color: #30b500;
-    color: rgb(217, 255, 0);
-    padding: 16px;
-    font-size: 60px;
-    border: none;
-    border-radius: 2px 2px 5px;
-   
-  }
-  /* The container <div> - needed to position the dropdown content */
-.dropdown {
-    margin-left: 170vw;
-    margin-right: 5vw;
-    margin-top: 2vw;
-    position:relative;
-    display:inline-block;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: flex-end;
-	align-content: stretch;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display:none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width:182px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    border-radius: 2px 2px 5px;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: rgb(146, 144, 144);
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #bcbcbc;}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
 
 .intro {
@@ -78,14 +26,15 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90%;
+    width: 50%;
 }
    
-  h1{
+.intro h1{
     color:rgb(189, 146, 237);
-    font-size: 90px;
+    font-size: 80px;
     font-family:Arial, Helvetica, sans-serif;
     font-style: oblique;
+    padding-top:50vw ;
 }
 .intro p{
     color:rgb(255, 255, 255);
@@ -104,10 +53,12 @@ body {
     font-size:30px ;
     font-family:Arial, Helvetica, sans-serif;
     font-style: oblique;
+    margin-top: 0;
 }
 
 h3{
     color:black;
+    font-size: 80px;
 }
 .img{
     display: flex;
@@ -125,19 +76,21 @@ h3{
 }
 .img2{
     margin-top: 300px;
-    background-image: linear-gradient(to top, #fad9c4 50%,  #ffd1ff41 100%);
+   /* background-image: linear-gradient(to top, #fad9c4 50%,  #ffd1ff41 100%);*/
     /*background-image: linear-gradient(-20deg, #ddd6f3 0%, #faaca8 100%, #faaca8 100%);*/
+    background-image: linear-gradient(to top, #e14fad 0%, #d3fe48a5 100%);
     display: flex;
-	flex-direction: column;
-	align-items: center;
-	align-content: stretch; 
+	  flex-direction: column;
+	  align-items: center;
+	  align-content: stretch; 
     padding: 10vw;
     padding-left: 10vw;
     padding-top: 5vw;
   }
   .img2 img{
     width: 50vw;
-    padding-right: 50px;
+    padding-right: 60px;
+    padding-left: 60px;
     border: 8px 8px 10px;
   }
   .button{
@@ -154,16 +107,18 @@ h3{
     letter-spacing: 1px;
     font-size: 20px;
     margin-top: 50px;
-    box-shadow: white 5px 5px 5px;
-    
-    
-
  
+  }
+
+  .button:hover {
+    background-color: #0062cc;
+    color:#e2ff04;
   }
   .buttons {
     margin: 5px 0;
-    display: flex;
+    display: inline-block;
     align-items: center;
+    align-content:flex-start;
     flex: 1;
     border: 40px;
     border-radius: 5px;
@@ -171,18 +126,50 @@ h3{
     color: #000000;
     letter-spacing: 1px;
     font-size: 30px;
-    margin-top: 50px;
     flex-direction: row;
 	  justify-content: space-between;
+    width:200px;
+    height:0px
 
 
 }
 
-.about{
-  background-image: linear-gradient(to top, #fdcbf1 10%, #e6dee9 100%); 
-  padding:500px; 
-  box-shadow: #7aff0d;
+.buttons{
+  background-color: #e2ff04;
+  margin-top: 10px;
+  padding:20px;
+  display: flex;
+  align-items: center;
+}
+.2nd-buttons{
+  background-color: #e2ff04;
+  margin-top: 10px;
+  padding:20px;
+  display: flex;
+  align-items: center;
+}
+.build{
+  color:#e2ff04;
+}
+
+.about {
+  /*background-image: linear-gradient(to top, #fdcbf1 10%, #e6dee9 100%);*/ 
+  background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
+  padding:500px;
+  width:60px;
+  padding-left: 47vw;
+  color:#e2ff04;
+  display: flex;
+
 }  
+
+h5{
+  display: flex;
+  justify-content: flex-start;
+}
+.about p{
+  font-size: 50px;
+}
 h6{
   font-size: 30px;
 }
