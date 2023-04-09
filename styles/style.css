@@ -93,10 +93,11 @@ h3{
 	  align-items: center;
 	  align-content: stretch; 
     padding-top: 5vw;
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: 30vw;
+    padding-right: 30vw;
     padding-bottom: 10vw;
    background-image:linear-gradient(to right, #000000 0%, black 100%);
+ 
     
 }
 
@@ -191,17 +192,16 @@ h3{
     display: flex;
 	  flex-direction: column;
 	  align-items: center;
-	  align-content: stretch; 
-    padding: 90vw;
-    padding-left: 10vw;
+	  align-content: stretch;
     padding-bottom: 10vw;
   
+  
+  
   }
-  .img2 ,img{
-    width: 60vw;
+  .img2 > img{
+    width: 50%;
     padding-right: 30vw;
-    padding-left: 30vw;
-    border-radius:50px 50px 20px;
+    padding-left: 33vw;
     padding-top: 5vw;
   }
 
