@@ -7,7 +7,7 @@ body {
     padding: 0;
     font-family: 'Roboto', sans-serif;
    /* background-color: rgb(255, 170, 213);*/
-   background-image: linear-gradient(to top, #fdcbf1 10%, #e6dee9 100%);  
+   background-image: linear-gradient(to top,  #ffd8f6 0%, #e1c9e9 100%);  
    /*background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%); */
     box-sizing: border-box;
     
@@ -16,22 +16,31 @@ body {
 /* Intro */
 
 
-.intro {
+.intro {/*
     position: relative;
     text-align: center;
     top: 50%;
     left: 50%;
+   
     transform: translate(-50%, -50%);
-    width: 100%;
-  
+ */
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ align-content: center;
+ position: relative;
+ text-align: center;
+
 }
    
 .intro h1{
     color:rgb(189, 146, 237);
     font-size: 80px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'Bungee';
     font-style: oblique;
-    padding-top:50vw ;
+    padding-top:10vw ;
+    padding-bottom: 50px;
  
 }
 
@@ -40,6 +49,7 @@ body {
     font-style: oblique;
     font-family:Arial, Helvetica, sans-serif;
     font-size: 30px;
+    padding-bottom: 5vw;
 }
 
 
@@ -48,15 +58,17 @@ body {
     align-items: center;
     flex-direction: column;
 	  flex-wrap: nowrap;
-    color:rgb(171, 126, 227);
-    font-family: sans-serif;
     font-size:30px ;
     font-family:Arial, Helvetica, sans-serif;
     font-style: oblique;
+    margin-top: 40px;
+  
   
 }
-.works > h2{
-  padding-bottom: 10vw;
+ h2{
+  padding-bottom: 5vw;
+  color:rgb(171, 126, 227);
+  
 }
 
 /*1st Project*/
@@ -90,7 +102,7 @@ h3{
 
 /* Visit page Link */
 .button{
-  margin: 10px 0;
+  margin: 5px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,19 +115,22 @@ h3{
   letter-spacing: 1px;
   font-size: 20px;
   margin-top: 50px;
+  background-color: rgb(94, 94, 94);
  
 }
 .button a{
   text-decoration: none;
+  color:rgb(195, 193, 193);
 
+}
+
+.button:hover{
+  background-color: #070573;
+  
 
 }
 
-.button a:hover{
-  background-color: #03018b;
-  color:rgb(197, 198, 198);
 
-}
 
 .first-buttons > button {
   margin: 5px 0;
@@ -180,6 +195,7 @@ h3{
     padding: 90vw;
     padding-left: 10vw;
     padding-bottom: 10vw;
+  
   }
   .img2 ,img{
     width: 60vw;
@@ -204,7 +220,8 @@ h3{
     justify-content: center;
     align-items: center;
     flex: 1;
-    border: 40;
+    border: 50;
+    border-style: none;
     border-radius: 5px;
     text-transform: uppercase;
     font-weight: 600vw;
@@ -212,13 +229,15 @@ h3{
     letter-spacing: 1px;
     font-size: 20px;
     margin-top: 50px;
+    background-color: #f857cd;
   }
   .button1 a{
     text-decoration: none;
+    color:#85ff02;
+  
   }
   .button1:hover{
     background-color: #9c88fd;
-    color:#9dff00;
 
   }
 
@@ -236,8 +255,6 @@ h3{
   font-size: 30px;
   width:10vw;
   height:60px;
-  margin-top: 70px;
-  margin-bottom: 50px;
   justify-content: space-between;
   border: none;
   border-radius:20px 20px 20px;
@@ -247,12 +264,10 @@ h3{
 
 .color > button{
   background-color:rgb(165, 254, 0);
-  margin-top: 40px;
-  margin-bottom: 50px;
+  margin-top: 50px;
+  margin-bottom: 30px;
   
 }
-
-
 
 .build{
   color:#85ff02;
@@ -263,31 +278,53 @@ h3{
 }
 
 .about {
-  /*background-image: linear-gradient(to top, #fdcbf1 10%, #e6dee9 100%);*/ 
-  background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
-  padding:500px;
+  background-image: linear-gradient(to top, #fdcbf1 0%, #f9dfdf 100%);
+ /* background-image: linear-gradient(to top , #00d877 10%, #97d9e1 80%);*/
   width:60px;
-  margin-top: 10vw;
-  padding-left: 47vw;
-  color:#e2ff04;
+  padding-left: 40vw;
+  padding-right: 30vw;
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+  color: #ff9f9f;
   display: flex;
   text-decoration: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-items:center;
+	align-content: flex-start;
+  margin-top: 10vw;
 }  
 
 h5{
-  display: flex;
-  justify-content: flex-start;
+  color:#e2ff04;
+  font-size: 80px;
+  padding-right: 50vw;
+ 
 }
 .about p{
-  font-size: 50px;
+  font-size: 45px;
+  display: flex;
+  flex-direction: row;
+  width: 50vw;
+  padding-left: 20vw;
+  padding-right: 20vw;
+/* -webkit-text-stroke:2px #AB2158;*/
+ background: -webkit-linear-gradient(#ff9b9b, #ffe9e9);
+  -webkit-background-clip: text;
+ text-align:justify;
+ 
+
+
+  
 }
  h6{
-
   font-size: 30px;
   color:rgb(248, 93, 93);
   margin-bottom: 10vw;
   display: flex;
   justify-content: center;
+  font-family:monospace;
 
 }
 
