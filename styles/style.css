@@ -38,7 +38,7 @@ body {
     color:rgb(189, 146, 237);
     font-size: 80px;
     font-family:'Bungee';
-    font-style: oblique;
+    font-style:normal;/*ändern in mobile screen und desktop*/
     padding-top:10vw ;
     padding-bottom: 50px;
  
@@ -330,643 +330,95 @@ h5{
 
 /*********/
 
-/* Mobile Phones (up to 480px) */
+/* Mobile screens */
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 14px; /* Change the font size for mobile devices */
+  }
 
-@media only screen and (max-width: 480px) {
-/* Intro */
+  .intro h1 {
+    font-size: 40px; /* Change the font size of the intro heading */
+    padding-top: 20vw; /* Increase the padding for smaller screens */
+  }
 
+  .intro p {
+    font-size: 20px; /* Change the font size of the intro paragraph */
+    padding-bottom: 10vw; /* Increase the padding for smaller screens */
+  }
 
-.intro {/*
-  position: relative;
-  text-align: center;
-  top: 50%;
-  left: 50%;
- 
-  transform: translate(-50%, -50%);
-*/
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-align-content: center;
-position: relative;
-text-align: center;
+  .works h2 {
+    font-size: 25px; /* Change the font size of the section heading */
+  }
 
-}
- 
-.intro h1{
-  color:rgb(189, 146, 237);
-  font-size: 80px;
-  font-family:'Bungee';
-  font-style: oblique;
-  padding-top:10vw ;
-  padding-bottom: 50px;
+  .img > p {
+    font-size: 30px; /* Change the font size of the project title */
+  }
 
-}
+  .button {
+    font-size: 16px; /* Change the font size of the visit page button */
+  }
 
-.intro p{
-  color:rgb(255, 255, 255);
-  font-style: oblique;
-  font-family:Arial, Helvetica, sans-serif;
-  font-size: 30px;
-  padding-bottom: 5vw;
-}
+  .first-buttons > button {
+    font-size: 20px; /* Change the font size of the project buttons */
+    width: 150px; /* Reduce the width of the project buttons */
+    height: 50px; /* Reduce the height of the project buttons */
+    margin-top: 20px; /* Reduce the top margin of the project buttons */
+    margin-bottom: 20px; /* Reduce the bottom margin of the project buttons */
+  }
 
+  .buttons {
+    font-size: 20px; /* Change the font size of the section buttons */
+    width: 150px; /* Reduce the width of the section buttons */
+    height: 50px; /* Reduce the height of the section buttons */
+  }
 
-.works{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  font-size:30px ;
-  font-family:Arial, Helvetica, sans-serif;
-  font-style: oblique;
-  margin-top: 40px;
+  .img2 > img {
+    width: 80%; /* Reduce the size of the project image */
+    padding-right: 10vw; /* Reduce the right padding of the project image */
+    padding-left: 10vw; /* Reduce the left padding of the project image */
+    padding-top: 2vw; /* Reduce the top padding of the project image */
+  }
 
-
-}
-h2{
-padding-bottom: 5vw;
-color:rgb(171, 126, 227);
-
-}
-
-/*1st Project*/
-.img > p{
-color: #e2ff04;
-font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-letter-spacing: 10px;
-font-size: 60px;
-
-}
-
-h3{
-  color:black;
-  font-size: 80px;
-}
-
-.img{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
-  align-content: stretch; 
-  padding-top: 5vw;
-  padding-left: 30vw;
-  padding-right: 30vw;
-  padding-bottom: 10vw;
- background-image:linear-gradient(to right, #000000 0%, black 100%);
-
-  
-}
-
-/* Visit page Link */
-.button{
-margin: 5px 0;
-display: flex;
-justify-content: center;
-align-items: center;
-flex: 1;
-border: 40;
-border-radius: 5px;
-text-transform: uppercase;
-font-weight: 600vw;
-color: #090535;
-letter-spacing: 1px;
-font-size: 20px;
-margin-top: 50px;
-background-color: rgb(94, 94, 94);
-
-}
-.button a{
-text-decoration: none;
-color:rgb(195, 193, 193);
-
-}
-
-.button:hover{
-background-color: #070573;
-
-
+  .img2 > p {
+    font-size: 25px; /* Change the font size of the project title */
+  }
 }
 
 
+/* Desktop */
+@media only screen and (min-width: 768px) {
+  .intro h1 {
+    font-size: 80px; /* Reset the font size of the intro heading */
+    padding-top: 10vw; /* Reset the top padding of the intro heading */
+  }
 
-.first-buttons > button {
-margin: 5px 0;
-display: inline-block;
-align-items: baseline;
-flex: 1;
-color: #000000;
-letter-spacing: 2px;
-font-size: 25px;
-flex-direction: row;
-width:10vw;
-height:70px;
-margin-top: 50px;
-margin-bottom: 50px;
-justify-content: space-between;
-padding-left:10px;
-border: 5px solid;
-border-radius: 20px 20px 20px;
+  .intro p {
+    font-size: 30px; /* Reset the font size of the intro paragraph */
+    padding-bottom: 5vw; /* Reset the bottom padding of the intro paragraph */
+  }
 
+  .works h2 {
+    font-size: 30px; /* Reset the font size of the section heading */
+  }
 
+  .img > p {
+    font-size: 60px; /* Reset the font size of the project title */
+  }
 
-}
+  .button {
+    font-size: 20px; /* Reset the font size of the visit page button */
+  }
 
-.buttons{
-background-color: #e2ff04;
-margin-top: 10px;
-display: flex;
-align-items: center;
-}
-
-
-.buttons {
-align-items: center;
-align-content:flex-start;
-flex: 1;
-border: 40px;
-border-radius: 5px;
-font-weight: 600vw;
-color: #000000;
-letter-spacing: 1px;
-font-size: 30px;
-flex-direction: row;
-justify-content: space-between;
-width:200px;
-height:0px
-
-}
-
-/* 2nd Project */
-
-
-
-.img2{
-  margin-top: 0px;
- /* background-image: linear-gradient(to top, #fad9c4 50%,  #ffd1ff41 100%);*/
-  /*background-image: linear-gradient(-20deg, #ddd6f3 0%, #faaca8 100%, #faaca8 100%);*/
-  background-image: linear-gradient(to top, #e14fad 0%, #a5ff13 100%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: stretch;
-  padding-bottom: 10vw;
-
-
-
-}
-.img2 > img{
-  width: 50%;
-  padding-right: 30vw;
-  padding-left: 33vw;
-  padding-top: 5vw;
-}
-
-.img2 > p{
-  color: #abff04;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  letter-spacing: 10px;
-  padding-top: 30px;
-}
-
-/* Visit Page Link */
-
-.button1{
-  margin: 5px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
-  border: 50;
-  border-style: none;
-  border-radius: 5px;
-  text-transform: uppercase;
-  font-weight: 600vw;
-  color: #090535;
-  letter-spacing: 1px;
-  font-size: 20px;
-  margin-top: 50px;
-  background-color: #f857cd;
-}
-.button1 a{
-  text-decoration: none;
-  color:#85ff02;
-
-}
-.button1:hover{
-  background-color: #9c88fd;
-
+  .first-buttons > button {
+    font-size: 25px; /* Reset the font size of the project buttons */
+    width: 10vw; /* Reset the width of the project buttons */
+    height: 70px; /* Reset the height of the project buttons */
+    margin-top: 50px; /* Reset the top margin of the project buttons */
+    margin-bottom: 50px; /* Reset the bottom margin of the project buttons */
+  }
 }
 
 
-.buttons2{
-margin: 5px 0;
-display: inline-block;
-align-items: center;
-align-content:center;
-flex: 1;
-color: #000000;
-letter-spacing: 2px;
-flex-direction: row;
-text-decoration: none;
-font-size: 30px;
-width:10vw;
-height:60px;
-justify-content: space-between;
-border: none;
-border-radius:20px 20px 20px;
-
-
-}
-
-.color > button{
-background-color:rgb(165, 254, 0);
-margin-top: 50px;
-margin-bottom: 30px;
-
-}
-
-.build{
-color:#85ff02;
-text-decoration: none;
-font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-letter-spacing: 10px;
-font-size: 60px;
-}
-
-.about {
-background-image: linear-gradient(to top, #fdcbf1 0%, #f9dfdf 100%);
-/* background-image: linear-gradient(to top , #00d877 10%, #97d9e1 80%);*/
-width:60px;
-padding-left: 40vw;
-padding-right: 30vw;
-padding-top: 10vw;
-padding-bottom: 10vw;
-color: #ff9f9f;
-display: flex;
-text-decoration: none;
-flex-direction: column;
-flex-wrap: nowrap;
-justify-content: space-evenly;
-align-items:center;
-align-content: flex-start;
-margin-top: 10vw;
-}  
-
-h5{
-color:#e2ff04;
-font-size: 80px;
-padding-right: 50vw;
-
-}
-.about p{
-font-size: 45px;
-display: flex;
-flex-direction: row;
-width: 50vw;
-padding-left: 20vw;
-padding-right: 20vw;
-/* -webkit-text-stroke:2px #AB2158;*/
-background: -webkit-linear-gradient(#ff9b9b, #ffe9e9);
--webkit-background-clip: text;
-text-align:justify;
-
-
-
-
-}
-h6{
-font-size: 30px;
-color:rgb(248, 93, 93);
-margin-bottom: 10vw;
-display: flex;
-justify-content: center;
-font-family:monospace;
-
-}
-}
-
-/* Small Screens (481px - 767px) */
-@media only screen and (min-width: 481px) and (max-width: 767px) {
- 
-  /* Intro */
-
-
-.intro {/*
-  position: relative;
-  text-align: center;
-  top: 50%;
-  left: 50%;
- 
-  transform: translate(-50%, -50%);
-*/
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-align-content: center;
-position: relative;
-text-align: center;
-
-}
- 
-.intro h1{
-  color:rgb(189, 146, 237);
-  font-size: 80px;
-  font-family:'Bungee';
-  font-style: oblique;
-  padding-top:10vw ;
-  padding-bottom: 50px;
-
-}
-
-.intro p{
-  color:rgb(255, 255, 255);
-  font-style: oblique;
-  font-family:Arial, Helvetica, sans-serif;
-  font-size: 30px;
-  padding-bottom: 5vw;
-}
-
-
-.works{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  font-size:30px ;
-  font-family:Arial, Helvetica, sans-serif;
-  font-style: oblique;
-  margin-top: 40px;
-
-
-}
-h2{
-padding-bottom: 5vw;
-color:rgb(171, 126, 227);
-
-}
-
-/*1st Project*/
-.img > p{
-color: #e2ff04;
-font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-letter-spacing: 10px;
-font-size: 60px;
-
-}
-
-h3{
-  color:black;
-  font-size: 80px;
-}
-
-.img{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
-  align-content: stretch; 
-  padding-top: 5vw;
-  padding-left: 30vw;
-  padding-right: 30vw;
-  padding-bottom: 10vw;
- background-image:linear-gradient(to right, #000000 0%, black 100%);
-
-  
-}
-
-/* Visit page Link */
-.button{
-margin: 5px 0;
-display: flex;
-justify-content: center;
-align-items: center;
-flex: 1;
-border: 40;
-border-radius: 5px;
-text-transform: uppercase;
-font-weight: 600vw;
-color: #090535;
-letter-spacing: 1px;
-font-size: 20px;
-margin-top: 50px;
-background-color: rgb(94, 94, 94);
-
-}
-.button a{
-text-decoration: none;
-color:rgb(195, 193, 193);
-
-}
-
-.button:hover{
-background-color: #070573;
-
-
-}
-
-
-
-.first-buttons > button {
-margin: 5px 0;
-display: inline-block;
-align-items: baseline;
-flex: 1;
-color: #000000;
-letter-spacing: 2px;
-font-size: 25px;
-flex-direction: row;
-width:10vw;
-height:70px;
-margin-top: 50px;
-margin-bottom: 50px;
-justify-content: space-between;
-padding-left:10px;
-border: 5px solid;
-border-radius: 20px 20px 20px;
-
-
-
-}
-
-.buttons{
-background-color: #e2ff04;
-margin-top: 10px;
-display: flex;
-align-items: center;
-}
-
-
-.buttons {
-align-items: center;
-align-content:flex-start;
-flex: 1;
-border: 40px;
-border-radius: 5px;
-font-weight: 600vw;
-color: #000000;
-letter-spacing: 1px;
-font-size: 30px;
-flex-direction: row;
-justify-content: space-between;
-width:200px;
-height:0px
-
-}
-
-/* 2nd Project */
-
-
-
-.img2{
-  margin-top: 0px;
- /* background-image: linear-gradient(to top, #fad9c4 50%,  #ffd1ff41 100%);*/
-  /*background-image: linear-gradient(-20deg, #ddd6f3 0%, #faaca8 100%, #faaca8 100%);*/
-  background-image: linear-gradient(to top, #e14fad 0%, #a5ff13 100%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: stretch;
-  padding-bottom: 10vw;
-
-
-
-}
-.img2 > img{
-  width: 50%;
-  padding-right: 30vw;
-  padding-left: 33vw;
-  padding-top: 5vw;
-}
-
-.img2 > p{
-  color: #abff04;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  letter-spacing: 10px;
-  padding-top: 30px;
-}
-
-/* Visit Page Link */
-
-.button1{
-  margin: 5px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
-  border: 50;
-  border-style: none;
-  border-radius: 5px;
-  text-transform: uppercase;
-  font-weight: 600vw;
-  color: #090535;
-  letter-spacing: 1px;
-  font-size: 20px;
-  margin-top: 50px;
-  background-color: #f857cd;
-}
-.button1 a{
-  text-decoration: none;
-  color:#85ff02;
-
-}
-.button1:hover{
-  background-color: #9c88fd;
-
-}
-
-
-.buttons2{
-margin: 5px 0;
-display: inline-block;
-align-items: center;
-align-content:center;
-flex: 1;
-color: #000000;
-letter-spacing: 2px;
-flex-direction: row;
-text-decoration: none;
-font-size: 30px;
-width:10vw;
-height:60px;
-justify-content: space-between;
-border: none;
-border-radius:20px 20px 20px;
-
-
-}
-
-.color > button{
-background-color:rgb(165, 254, 0);
-margin-top: 50px;
-margin-bottom: 30px;
-
-}
-
-.build{
-color:#85ff02;
-text-decoration: none;
-font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-letter-spacing: 10px;
-font-size: 60px;
-}
-
-.about {
-background-image: linear-gradient(to top, #fdcbf1 0%, #f9dfdf 100%);
-/* background-image: linear-gradient(to top , #00d877 10%, #97d9e1 80%);*/
-width:60px;
-padding-left: 40vw;
-padding-right: 30vw;
-padding-top: 10vw;
-padding-bottom: 10vw;
-color: #ff9f9f;
-display: flex;
-text-decoration: none;
-flex-direction: column;
-flex-wrap: nowrap;
-justify-content: space-evenly;
-align-items:center;
-align-content: flex-start;
-margin-top: 10vw;
-}  
-
-h5{
-color:#e2ff04;
-font-size: 80px;
-padding-right: 50vw;
-
-}
-.about p{
-font-size: 45px;
-display: flex;
-flex-direction: row;
-width: 50vw;
-padding-left: 20vw;
-padding-right: 20vw;
-/* -webkit-text-stroke:2px #AB2158;*/
-background: -webkit-linear-gradient(#ff9b9b, #ffe9e9);
--webkit-background-clip: text;
-text-align:justify;
-
-
-
-
-}
-h6{
-font-size: 30px;
-color:rgb(248, 93, 93);
-margin-bottom: 10vw;
-display: flex;
-justify-content: center;
-font-family:monospace;
-
-}
-}
 /* Medium Screens (768px - 1024px) */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   /* your styles for medium screens here */
