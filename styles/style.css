@@ -13,17 +13,74 @@ body {
     
 }
 
+/*Navbar*/
+
+ul {
+  list-style: none; /* Entfernt Punkte */
+  padding: 0; /* Entfernt Padding */
+  margin: 0; /* Entfernt Margin */
+  top: 0;
+  right: 0;
+
+}
+
+li {
+  /*display: inline-block; /* Ändert die Listenpunkte in inline-Elemente */
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none; /* Entfernt die Unterstreichung */
+  display: block; /* Setzt die Anzeige auf Block */
+  text-align: right; 
+
+}
+
+/*Regel für Menu*/
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  flex-direction: row;
+  justify-content: flex-end;
+ 
+}
+
+.menu li {
+  margin: 0 10px;
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-end;
+	align-content: center;
+  padding-right: 50px;
+ 
+ 
+}
+
+.menu li:last-child {
+  margin-right: 10px;
+}
+.menu li {
+  margin: 0 10px;
+}
+
+.menu a {
+  text-align: right;
+  text-decoration: none;
+  color: #fefdff;
+  font-size: 30px;
+  font-family:'Courier New', Courier, monospace;
+  font-weight: bolder;
+}
+
+
 /* Intro */
 
 
-.intro {/*
-    position: relative;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-   
-    transform: translate(-50%, -50%);
- */
+.intro {
  display: flex;
  flex-direction: column;
  justify-content: center;
